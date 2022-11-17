@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <div class="container">
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        window.onload = () => {
+            if (new URL(location.href).searchParams.get('loginError')) {
+                alert(new URL(location.href).searchParams.get('loginError'));
+            }
+        };
+        //URL 쿼리 스트링을 추출해 매개변수에 연결된 첫번째 값을 반환
+        //passport에 포함된 authenticate 메서드에 의해 권한문제에
+        //의한 오류 메시지 송출, 오류페이지로 루트 페이지로 redirect
+    </script>
+    {% block script %}
+    {% endblock %}
+</body>
+
+</html>

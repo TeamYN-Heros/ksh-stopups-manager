@@ -1,0 +1,26 @@
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40vh;
+  margin-bottom: 40vh;
+}
+
+.registerForm input {
+  width: 400px;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.registerForm button {
+  width: 212px;
+  padding: 10px;
+}
+
+.registerForm legend {
+  font-size: 30px;
+}

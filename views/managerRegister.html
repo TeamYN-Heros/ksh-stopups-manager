@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>관리자 등록</title>
+    <link rel="stylesheet" href="../CSS/managerRegister.css" />
+  </head>
+  <body>
+    <form class="registerForm">
+      <legend>사용자 등록</legend>
+      <div><input id="adminId" type="text" placeholder="아이디" /></div>
+      <div><input id="adminPw" type="text" placeholder="패스워드" /></div>
+      <div><input id="adminName" type="text" placeholder="이름" /></div>
+      <span>
+        <button type="submit">등록</button>
+        <button>취소</button>
+      </span>
+    </form>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/managerRegister.js"></script>
+  </body>
+</html>
